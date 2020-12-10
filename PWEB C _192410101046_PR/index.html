@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEKUT TRIP</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="jscript.js" ></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <h1 style="font-weight: 300;">SEKUT TRIP</h1>
+            </div>
+            <div class="navigation">
+                <a class="button" href="index.html">LOGIN</a>
+                <a href="destinasi.html">Destinasi</a>
+                <a href="jajan.html">Jajanan</a>
+                <a href="penginapan.html">Penginapan</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="login">
+        <form name="Biodata" method="POST" action="login.html">
+            <p>
+            <div class="form">
+                <h1>LOGIN AKUN</h1>
+                <input type="username" placeholder="Enter Username" name="username">
+                <input type="password" placeholder="Enter Password" name="password">
+                <div class="konfirmasi">Invalid Akun! Try Again!</div>
+                <center>
+                    <button class="btn.login" data-toggle="modal" onclick="validate()">Log In</button>
+                </center>
+            </p>
+            </div>
+        </form>
+    </div>
+    
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <center>
+                        <h2>LOGIN SUCCESS!</h2>
+                    </center>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <p style="error_para" ></p>
+
+<!-- <script>
+    var user = "PWEB_C";
+    var pass = "123123";
+    var error="";
+
+    function validate() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    if (username == user && password == pass){
+        // console.log(username + password + "is logged in!!")
+
+        let button = document.querySelector('button[data-toggle = "modal"]');
+        let modal = document.querySelector('.modal');
+
+        modal.classList.add('show');
+
+        modal.addEventListener('click', function(){
+            this.classList.remove('show');
+        }
+        );
+
+    modal.querySelector('.modal-content').addEventListener ('click', function() {
+        e.stopPropragation();
+    }
+    );
+      
+    }
+
+        else {
+            // console.log("incorrect username or password");
+	        error = " Invalid Username or Password. ";
+	        document.getElementById( "error_para" ).innerHTML = error;
+	        return false;
+    }
+    }
+
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 500
+    padding: 35px;
+    border: none;
+    border-radius: 70px;
+}
+.button {
+    color: black;
+    background-color: white;
+    box-shadow: 3px 3px 10px lightcoral;
+}
+
+nav.navbar {
+    background-color: blueviolet;
+    width: 1400px;
+}
+nav.navbar > div.container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar .title {
+    display: flex;
+}
+
+nav.navbar .navigation a:not(:last-child) {
+    margin-right: 30px;
+    color: black;
+    
+}
+nav.navbar .navigation a:not(.button):hover {
+    border-bottom: 3px solid;
+}
+
+.login{
+    background-color: blueviolet;
+    height: 550px;
+    width: 1500px;
+}
+.form{
+    background-color: lightcoral;
+    width:500px;
+    height: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid;
+    margin-top: 50px;
+    margin-left: 400px;
+    font-size: 20px;
+}
+.konfirmasi{
+    color: red;
+    display: none;
+}
+.konfirmasi.show1{
+    display: block;
+}
+
+.button{
+    background-color: white;
+    font-size: 20px;
+    margin-right: 100px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+.modal.show{
+    display: block;
+}
+.modal-dialog{
+    position: relative;
+    width: auto;
+    max-width: 450px;
+    margin: 50px auto;
+}
+.modal-content{
+    background-color: pink;
+    width: 100%;
+    border-radius: 10px;
+}
+.modal-content.modal-header{
+    padding-top: 50px;
+}
